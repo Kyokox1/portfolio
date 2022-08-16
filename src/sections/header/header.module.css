@@ -1,0 +1,46 @@
+.container {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 10px;
+	left: 20px;
+	right: 20px;
+	padding: 8px 20px;
+	background: var(--navbar-bg);
+	border-radius: 8px;
+	z-index: 900;
+	backdrop-filter: blur(15px);
+	border: 1px solid var(--black-100);
+}
+
+.logo {
+	width: 24px;
+	height: 24px;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.nav__sections {
+	display: flex;
+	gap: 15px;
+	padding-right: 10px;
+	border-right: 1px solid black;
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+
+.nav__socials {
+	display: flex;
+	gap: 10px;
+	padding-left: 10px;
+	font-size: 1.475rem;
+}
+
+a {
+	letter-spacing: 1px;
+	cursor: pointer;
+}

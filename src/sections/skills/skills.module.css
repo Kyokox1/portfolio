@@ -1,0 +1,16 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	gap: 50px;
+}
+
+.skills__figure {
+	min-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	justify-items: center;
+	row-gap: 20px;
+}

@@ -1,0 +1,34 @@
+.hero__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.hero__img {
+	width: 250px;
+	height: 250px;
+	border-radius: 74% 26% 50% 50% / 34% 21% 79% 66%;
+	box-shadow: 0 0.25rem 2.5rem -0.875rem var(--red-200);
+}
+
+.hero__container h1 {
+	font-size: 2.2rem;
+}
+
+.hero__container h2 {
+	font-size: 1.4rem;
+	font-weight: 400;
+	padding: 0px 0 25px;
+}
+
+.button {
+	padding: 8px 20px;
+	box-shadow: 0 0.25rem 2.5rem -0.875rem var(--red-100);
+	border: 3px solid var(--red-100);
+	border-radius: 8px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	background-color: var(--black-100);
+}

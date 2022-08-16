@@ -1,0 +1,56 @@
+.figure {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: min-content;
+}
+
+.img__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	width: 80px;
+	height: 80px;
+}
+
+.img__container img {
+	width: 48px;
+	height: 48px;
+}
+
+.html {
+	background-color: var(--html-color);
+}
+
+.css {
+	background-color: var(--css-color);
+}
+
+.javascript {
+	background-color: var(--javascript-color);
+}
+
+.git {
+	background-color: var(--git-color);
+}
+
+.github {
+	background-color: var(--github-color);
+}
+
+.github img {
+	filter: invert(100%);
+}
+
+.react {
+	background-color: var(--react-color);
+}
+
+.redux {
+	background-color: var(--redux-color);
+}
+
+.chakra {
+	background-color: var(--chakraui-color);
+}

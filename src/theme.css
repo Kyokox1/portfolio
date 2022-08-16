@@ -1,0 +1,32 @@
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+:root {
+	--green-100: #80ed99;
+	--green-200: #57cc99;
+	--green-300: #38a3a5;
+	--green-400: #22577a;
+
+	--pink-100: #e63e6d;
+	--pink-200: #b42b51;
+	--pink-300: #7d1935;
+	--pink-400: #420516;
+
+	--red-100: #ff0000;
+	--red-200: #950101;
+	--red-300: #3d0000;
+	--black-100: #22252f;
+	--black-200: #111218;
+	--navbar-bg: #22262f50;
+
+	--html-color: #e34c2620;
+	--css-color: #264de420;
+	--javascript-color: #f0db4f20;
+	--react-color: #61dbfb20;
+	--chakraui-color: #29b9ad20;
+	--redux-color: #764abc20;
+	--git-color: #f1502f20;
+	--github-color: #33333320;
+	--kotlin-color: #b125ea20;
+}
