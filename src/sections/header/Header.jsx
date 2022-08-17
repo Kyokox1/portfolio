@@ -8,7 +8,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 export const Header = () => {
 	return (
 		<header className={styles.container}>
-			<a>
+			<a href="#hero">
 				<img className={styles.logo} src={logo} alt="logo" />
 			</a>
 			<nav className={styles.nav}>

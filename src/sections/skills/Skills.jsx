@@ -37,7 +37,7 @@ export const Skills = () => {
 			logo: "/assets/tecnology/git-icon.svg"
 		},
 		{
-			name: "Github",
+			name: "GitHub",
 			className: "github",
 			logo: "/public/assets/tecnology/github-1.svg"
 		},

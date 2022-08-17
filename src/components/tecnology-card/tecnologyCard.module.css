@@ -3,6 +3,8 @@
 	flex-direction: column;
 	gap: 5px;
 	width: min-content;
+	color: var(--gray-letter-200);
+	font-weight: 500;
 }
 
 .img__container {

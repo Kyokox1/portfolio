@@ -4,6 +4,7 @@ import { Layout } from "./layout/Layout";
 import { Hero } from "./sections/hero/Hero";
 import { Projects } from "./sections/projects/Projects";
 import { Skills } from "./sections/skills/Skills";
+import { Hobbies } from "./sections/hobbies/Hobbies";
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 			<Hero />
 			<Projects />
 			<Skills />
+			<Hobbies />
 		</Layout>
 	);
 }
