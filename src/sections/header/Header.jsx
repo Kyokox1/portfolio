@@ -13,9 +13,9 @@ export const Header = () => {
 			</a>
 			<nav className={styles.nav}>
 				<div className={styles.nav__sections}>
+					<a href="#about-me">Sobre Mi</a>
 					<a href="#projects">Proyectos</a>
 					<a href="#skills">Habilidades</a>
-					<a href="#hobbies">Ocupaciones</a>
 				</div>
 				<div className={styles.nav__socials}>
 					<a

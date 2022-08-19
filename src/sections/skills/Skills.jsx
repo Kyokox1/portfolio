@@ -9,27 +9,27 @@ export const Skills = () => {
 		{
 			name: "HTML5",
 			className: "html",
-			logo: "/public/assets/tecnology/html-1.svg"
+			logo: "/assets/tecnology/html-1.svg"
 		},
 		{
 			name: "Css",
 			className: "css",
-			logo: "/public/assets/tecnology/css-3.svg"
+			logo: "/assets/tecnology/css-3.svg"
 		},
 		{
 			name: "JavaScript",
 			className: "javascript",
-			logo: "/public/assets/tecnology/logo-javascript.svg"
+			logo: "/assets/tecnology/logo-javascript.svg"
 		},
 		{
 			name: "React",
 			className: "react",
-			logo: "/public/assets/tecnology/react-2.svg"
+			logo: "/assets/tecnology/react-2.svg"
 		},
 		{
 			name: "Redux Toolkit",
 			className: "redux",
-			logo: "/public/assets/tecnology/redux.svg"
+			logo: "/assets/tecnology/redux.svg"
 		},
 		{
 			name: "Git",
@@ -39,12 +39,12 @@ export const Skills = () => {
 		{
 			name: "GitHub",
 			className: "github",
-			logo: "/public/assets/tecnology/github-1.svg"
+			logo: "/assets/tecnology/github-1.svg"
 		},
 		{
 			name: "Chakra UI",
 			className: "chakra",
-			logo: "/public/assets/tecnology/chakra-ui.svg"
+			logo: "/assets/tecnology/chakra-ui.svg"
 		}
 	];
 
@@ -53,7 +53,11 @@ export const Skills = () => {
 			<h3>Habilidades</h3>
 			<div className={styles.skills__figure}>
 				{skills.map((skill, i) => (
-					<TecnologyCard key={`${skill.name} ${i}`} {...skill} />
+					<TecnologyCard
+						key={`${skill.name} ${i}`}
+						{...skill}
+						index={i}
+					/>
 				))}
 			</div>
 		</section>

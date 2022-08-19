@@ -28,3 +28,27 @@
 	display: flex;
 	gap: 15px;
 }
+
+/* animation */
+
+/* @keyframes fadeLeft {
+	from {
+		left: 150px;
+		opacity: 0;
+	}
+	to {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeRight {
+	from {
+		right: 150px;
+		opacity: 0;
+	}
+	to {
+		right: 0;
+		opacity: 1;
+	}
+} */

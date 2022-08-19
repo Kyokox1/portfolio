@@ -39,7 +39,7 @@
 }
 
 .card__description {
-	width: 50vw;
+	width: 100%;
 	color: var(--gray-letter-200);
 	font-weight: 500;
 }
