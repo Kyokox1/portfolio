@@ -13,7 +13,7 @@ export const Header = () => {
 			</a>
 			<nav className={styles.nav}>
 				<div className={styles.nav__sections}>
-					<a href="#about-me">Sobre Mi</a>
+					<a href="#about-me">Sobre Mí</a>
 					<a href="#projects">Proyectos</a>
 					<a href="#skills">Habilidades</a>
 				</div>

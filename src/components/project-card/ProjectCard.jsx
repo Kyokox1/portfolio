@@ -1,7 +1,6 @@
 import React from "react";
 import { IoIosRocket } from "react-icons/io";
 import { AiFillCode } from "react-icons/ai";
-import { motion } from "framer-motion";
 
 import { ButtonProject } from "../button-projects/ButtonProject";
 
@@ -19,12 +18,12 @@ export const ProjectCard = ({
 }) => {
 	const animationDirection = index % 2 === 0 ? "left" : "right";
 	return (
-		<article className={styles.card__container}>
-			<FadeInDirection
-				direction={animationDirection}
-				time={1.5}
-				onView={true}
-			>
+		<FadeInDirection
+			direction={animationDirection}
+			time={1.5}
+			onView={true}
+		>
+			<article className={styles.card__container}>
 				<div className={styles.card__img}>
 					<img src={img} alt={title} />
 					<div className={styles.card__img_bg}>asd</div>
@@ -50,7 +49,7 @@ export const ProjectCard = ({
 						</ButtonProject>
 					</div>
 				</div>
-			</FadeInDirection>
-		</article>
+			</article>
+		</FadeInDirection>
 	);
 };

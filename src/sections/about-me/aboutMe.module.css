@@ -1,0 +1,32 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	min-height: 100vh;
+}
+
+.description {
+	color: var(--gray-letter-100);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 50%;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.description h3 {
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+.img__container {
+	width: 300px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.img__container img {
+	filter: drop-shadow(50px 100px 100px var(--red-300));
+}
