@@ -26,7 +26,7 @@ export const ProjectCard = ({
 			<article className={styles.card__container}>
 				<div className={styles.card__img}>
 					<img src={img} alt={title} />
-					<div className={styles.card__img_bg}>asd</div>
+					<div className={styles.card__img_bg}></div>
 				</div>
 				<div className={styles.card__text}>
 					<h4 className={styles.card__title}>{title}</h4>

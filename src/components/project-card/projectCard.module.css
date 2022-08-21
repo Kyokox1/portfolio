@@ -1,18 +1,20 @@
 .card__container {
 	display: flex;
-	flex-direction: column;
-	gap: 15px;
-	width: 50vw;
+	gap: 20px;
 }
 
 .card__img {
 	position: relative;
+	max-width: 40%;
+	height: max-content;
+	align-self: center;
 }
 
 .card__img img {
 	position: relative;
 	border-radius: 10px;
 	z-index: 100;
+	width: 100%;
 }
 
 .card__img_bg {
@@ -30,7 +32,9 @@
 .card__text {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	gap: 15px;
+	flex: 1;
 }
 
 .card__title {
@@ -62,5 +66,4 @@
 .buttons {
 	display: flex;
 	gap: 20px;
-	justify-content: center;
 }

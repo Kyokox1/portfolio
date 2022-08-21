@@ -1,21 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./header.module.css";
 import logo from "../../assets/react.svg";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { BsFillBriefcaseFill, BsFillFilePersonFill } from "react-icons/bs";
+import { AiFillFire } from "react-icons/ai";
+
+import { HamburgerButton } from "../../components/hamburger-button/HamburgerButton";
 
 export const Header = () => {
+	const [isOpenHamburgerMenu, setIsOpenHamburgerMenu] = useState(false);
+
 	return (
 		<header className={styles.container}>
-			<a href="#hero">
+			<a href="#hero" className={styles.logo__container}>
 				<img className={styles.logo} src={logo} alt="logo" />
 			</a>
 			<nav className={styles.nav}>
-				<div className={styles.nav__sections}>
-					<a href="#about-me">Sobre Mí</a>
-					<a href="#projects">Proyectos</a>
-					<a href="#skills">Habilidades</a>
+				<div
+					className={`${styles.nav__sections} ${
+						isOpenHamburgerMenu && styles.nav__sections_active
+					}`}
+					onClick={() => setIsOpenHamburgerMenu(false)}
+				>
+					<a href="#about-me">
+						<BsFillBriefcaseFill
+							className={styles.nav__icon__mobile}
+						/>{" "}
+						Sobre Mí
+					</a>
+					<a href="#projects">
+						<BsFillFilePersonFill
+							className={styles.nav__icon__mobile}
+						/>{" "}
+						Proyectos
+					</a>
+					<a href="#skills">
+						<AiFillFire className={styles.nav__icon__mobile} />{" "}
+						Habilidades
+					</a>
 				</div>
 				<div className={styles.nav__socials}>
 					<a
@@ -32,6 +56,8 @@ export const Header = () => {
 					>
 						<FaGithub />
 					</a>
+					{/* Hamburger Button */}
+					<HamburgerButton setIsOpen={setIsOpenHamburgerMenu} />
 				</div>
 			</nav>
 		</header>

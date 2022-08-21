@@ -9,7 +9,7 @@
 	padding: 8px 20px;
 	background: var(--navbar-bg);
 	border-radius: 8px;
-	z-index: 900;
+	z-index: 800;
 	backdrop-filter: blur(15px);
 	border: 1px solid var(--black-100);
 	color: #b5b5b5;
@@ -26,6 +26,7 @@
 }
 
 .nav__sections {
+	position: relative;
 	display: flex;
 	gap: 15px;
 	padding-right: 10px;
@@ -49,4 +50,66 @@ a {
 
 a:hover {
 	color: #ffffff;
+}
+
+.nav__mobile {
+	display: none;
+}
+
+.nav__icon__mobile {
+	display: none;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+	.container {
+		padding: 15px 0;
+	}
+
+	.logo__container {
+		position: absolute;
+		top: 0;
+		padding: 15px 20px;
+	}
+
+	.nav {
+		flex-direction: column-reverse;
+		width: 100%;
+		gap: 15px;
+	}
+
+	.nav__sections {
+		display: none;
+		flex-direction: column;
+		width: 100%;
+		padding-bottom: 30px;
+		font-size: 2rem;
+		border: none;
+		border-radius: 8px;
+		z-index: 900;
+		transition: all 3s ease-in-out;
+	}
+
+	.nav__sections_active {
+		display: flex;
+	}
+
+	.nav__sections a {
+		padding: 10px 20px;
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+
+	.nav__socials {
+		align-self: flex-end;
+		font-size: 2.2rem;
+		padding-right: 20px;
+		gap: 25px;
+	}
+
+	.nav__icon__mobile {
+		display: block;
+	}
 }
