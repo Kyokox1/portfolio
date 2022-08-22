@@ -14,8 +14,8 @@ export const LandscapeAnimation = ({
 		<motion.div
 			initial={
 				direction === "right"
-					? { x: 100, opacity: 0 }
-					: { x: 100, opacity: 0 }
+					? { x: 150, opacity: 0 }
+					: { x: -150, opacity: 0 }
 			}
 			animate={!onView && { x: 0, opacity: 1 }}
 			whileInView={onView && { opacity: 1, x: 0 }}
