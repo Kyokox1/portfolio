@@ -7,4 +7,19 @@
 	background: var(--black-200);
 	color: #ffffff;
 	overflow-x: hidden;
+	padding-bottom: 40px;
+}
+
+/* tablet */
+@media (max-width: 768px) {
+	.layout {
+		padding-top: 20px;
+	}
+}
+
+/* Cellphone */
+@media (max-width: 425px) {
+	.layout {
+		padding-top: 40px;
+	}
 }

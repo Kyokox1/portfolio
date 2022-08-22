@@ -5,7 +5,7 @@ import { AiFillCode } from "react-icons/ai";
 import { ButtonProject } from "../button-projects/ButtonProject";
 
 import styles from "./projectCard.module.css";
-import { FadeInDirection } from "../../animations/FadeInDirection";
+import { LandscapeAnimation } from "../../animations/LandscapeAnimation";
 
 export const ProjectCard = ({
 	title,
@@ -18,7 +18,7 @@ export const ProjectCard = ({
 }) => {
 	const animationDirection = index % 2 === 0 ? "left" : "right";
 	return (
-		<FadeInDirection
+		<LandscapeAnimation
 			direction={animationDirection}
 			time={1.5}
 			onView={true}
@@ -50,6 +50,6 @@ export const ProjectCard = ({
 					</div>
 				</div>
 			</article>
-		</FadeInDirection>
+		</LandscapeAnimation>
 	);
 };

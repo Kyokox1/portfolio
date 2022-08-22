@@ -1,11 +1,14 @@
 .card__container {
 	display: flex;
 	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .card__img {
 	position: relative;
-	max-width: 40%;
+	width: 40%;
+	min-width: 470px;
 	height: max-content;
 	align-self: center;
 }
@@ -35,6 +38,8 @@
 	justify-content: space-around;
 	gap: 15px;
 	flex: 1;
+	min-width: 430px;
+	max-width: 750px;
 }
 
 .card__title {
@@ -66,4 +71,51 @@
 .buttons {
 	display: flex;
 	gap: 20px;
+}
+
+/* Tablet */
+
+@media (max-width: 999px) {
+	.card__container {
+		text-align: center;
+	}
+
+	.tags {
+		justify-content: center;
+	}
+
+	.buttons {
+		justify-content: center;
+	}
+
+	.card__img {
+		width: 80vw;
+	}
+}
+
+@media (max-width: 768px) {
+	.card__text {
+		max-width: 600px;
+	}
+}
+
+/* Cellphone */
+
+@media (max-width: 500px) {
+	.card__img {
+		width: 90vw;
+		min-width: 300px;
+	}
+
+	.buttons {
+		flex-direction: column;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 425px) {
+	.card__description {
+		width: 90vw;
+		margin: 0 auto;
+	}
 }

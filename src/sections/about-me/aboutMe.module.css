@@ -11,7 +11,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	max-width: 50%;
+	width: 50%;
 	font-weight: 500;
 	letter-spacing: 1px;
 }
@@ -29,4 +29,21 @@
 
 .img__container img {
 	filter: drop-shadow(50px 100px 100px var(--red-300));
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.description {
+		width: 80vw;
+	}
+}
+
+@media (max-width: 425px) {
+	.description {
+		width: 85vw;
+	}
 }

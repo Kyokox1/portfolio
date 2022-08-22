@@ -1,5 +1,4 @@
 .button {
-	/* --green: #1bfd9c; */
 	padding: 8px 20px;
 	font-weight: 500;
 	font-size: 15px;
@@ -46,4 +45,13 @@
 
 .button:hover:before {
 	transform: translateX(15em);
+}
+
+@media (max-width: 425px) {
+	.button {
+		width: 90vw;
+		min-width: 300px;
+		padding: 12px;
+		text-align: center;
+	}
 }

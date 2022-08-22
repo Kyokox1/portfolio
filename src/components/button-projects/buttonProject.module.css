@@ -17,3 +17,12 @@
 	background-color: #ed64a6;
 	color: var(--black-200);
 }
+
+@media (max-width: 500px) {
+	.button {
+		width: 90vw;
+		max-width: 450px;
+		min-width: 300px;
+		justify-content: center;
+	}
+}

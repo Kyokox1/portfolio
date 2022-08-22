@@ -1,31 +1,29 @@
 import React from "react";
-import { motion } from "framer-motion";
 
-import { FadeInDirection } from "../../animations/FadeInDirection";
+import { VerticalAnimation } from "../../animations/VerticalAnimation";
+import { ImageBounce } from "../../animations/ImageBounce";
 
 import styles from "./tecnologyCard.module.css";
 
-export const TecnologyCard = ({ name, logo, className, index }) => {
+export const TecnologyCard = ({ name, logo, className, index, delay }) => {
+	const top = index % 2 === 0 ? -2 : 2;
+	const base = index % 2 === 0 ? 2 : -2;
+
 	return (
-		<FadeInDirection onView={true}>
+		<VerticalAnimation delayTime={delay}>
 			<figure className={styles.figure}>
 				<div
 					className={`${styles.img__container} ${styles[className]}`}
 				>
-					<motion.img
-						initial={index % 2 === 0 ? { y: -2 } : { y: 2 }}
-						animate={index % 2 === 0 ? { y: 2 } : { y: -2 }}
-						transition={{
-							duration: 2,
-							repeat: Infinity,
-							repeatType: "reverse"
-						}}
-						src={logo}
-						alt={name}
+					<ImageBounce
+						imgUrl={logo}
+						name={`${name}-tech`}
+						top={top}
+						base={base}
 					/>
 				</div>
 				<figcaption>{name}</figcaption>
 			</figure>
-		</FadeInDirection>
+		</VerticalAnimation>
 	);
 };
