@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import styles from "./header.module.css";
-import logo from "../../assets/react.svg";
+import logo from "../../../public/assets/logo/xing (9).png";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsFillBriefcaseFill, BsFillFilePersonFill } from "react-icons/bs";

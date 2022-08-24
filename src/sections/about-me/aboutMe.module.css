@@ -7,11 +7,14 @@
 }
 
 .description {
+	width: 50%;
+}
+
+.description div {
 	color: var(--gray-letter-100);
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	width: 50%;
 	font-weight: 500;
 	letter-spacing: 1px;
 }

@@ -65,12 +65,23 @@ a:hover {
 @media (max-width: 768px) {
 	.container {
 		padding: 15px 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		border-radius: 0;
+		border: none;
+		border-bottom: 1px solid var(--black-100);
 	}
 
 	.logo__container {
 		position: absolute;
 		top: 0;
 		padding: 15px 20px;
+	}
+
+	.logo {
+		width: 35px;
+		height: 35px;
 	}
 
 	.nav {
