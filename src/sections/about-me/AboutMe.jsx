@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { VerticalAnimation } from "../../animations/VerticalAnimation";
+import { Title } from "../../components/title-section/Title";
 
 import avatar from "../../../public/assets/avatar.svg";
 import styles from "./aboutMe.module.css";
@@ -11,7 +12,7 @@ export const AboutMe = () => {
 		<section id="about-me" className={styles.container}>
 			<div className={styles.description}>
 				<VerticalAnimation>
-					<h3>Sobre Mí</h3>
+					<Title>Sobre Mí</Title>
 					<p>
 						Hola, Soy desarrollador Web Front-end, Con experiencia
 						en desarrollo de proyectos personales. Me encargo de

@@ -3,7 +3,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .hero__img {
@@ -29,9 +29,22 @@
 	gap: 15px;
 }
 
+/* Tablet */
+
+/* tablet */
+@media (max-width: 768px) {
+	.hero__container {
+		padding-top: 20px;
+	}
+}
+
 /* Cellphone */
 
 @media (max-width: 425px) {
+	.hero__container {
+		padding-top: 70px;
+	}
+
 	.button__container {
 		flex-direction: column;
 	}

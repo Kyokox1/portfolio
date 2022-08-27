@@ -1,0 +1,10 @@
+.title {
+	font-size: 2rem;
+	color: #ffffff;
+}
+
+@media (max-width: 768px) {
+	.title {
+		text-align: center;
+	}
+}

@@ -19,11 +19,6 @@
 	letter-spacing: 1px;
 }
 
-.description h3 {
-	color: #ffffff;
-	font-size: 2rem;
-}
-
 .img__container {
 	width: 300px;
 	border-radius: 50%;
@@ -38,6 +33,7 @@
 @media (max-width: 768px) {
 	.container {
 		flex-direction: column;
+		padding-top: 60px;
 	}
 
 	.description {
