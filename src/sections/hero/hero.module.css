@@ -29,24 +29,12 @@
 	gap: 15px;
 }
 
-/* Tablet */
-
-/* tablet */
-@media (max-width: 768px) {
-	.hero__container {
-		padding-top: 20px;
-	}
-}
-
 /* Cellphone */
 
-@media (max-width: 425px) {
-	.hero__container {
-		padding-top: 70px;
-	}
-
+@media (max-width: 768px) {
 	.button__container {
 		flex-direction: column;
+		gap: 20px;
 	}
 }
 

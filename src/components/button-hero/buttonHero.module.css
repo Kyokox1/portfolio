@@ -47,11 +47,19 @@
 	transform: translateX(15em);
 }
 
+@media (max-width: 768px) {
+	.button {
+		width: 40vw;
+		min-width: 350px;
+		padding: 12px;
+		text-align: center;
+	}
+}
+
 @media (max-width: 425px) {
 	.button {
 		width: 90vw;
 		min-width: 300px;
-		padding: 12px;
 		text-align: center;
 	}
 }

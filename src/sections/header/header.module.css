@@ -62,7 +62,7 @@ a:hover {
 
 /* Tablet */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 	.container {
 		padding: 15px 0;
 		top: 0;
