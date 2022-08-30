@@ -2,12 +2,21 @@ body {
 	font-family: "Raleway", sans-serif;
 }
 
-:root {
-	--green-100: #80ed99;
-	--green-200: #57cc99;
-	--green-300: #38a3a5;
-	--green-400: #22577a;
+::-webkit-scrollbar {
+	width: 8px;
+	background: var(--black-100);
+}
 
+::-webkit-scrollbar-thumb {
+	background: var(--gray-letter-200);
+	border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--gray-letter-100);
+}
+
+:root {
 	--pink-100: #e63e6d;
 	--pink-200: #b42b51;
 	--pink-300: #7d1935;
@@ -16,12 +25,16 @@ body {
 	--red-100: #ff0000;
 	--red-200: #950101;
 	--red-300: #3d0000;
+
 	--black-100: #22252f;
 	--black-200: #111218;
 
 	--gray-letter-100: #adb5d6;
 	--gray-letter-200: #8e99c7;
 	--navbar-bg: #22262f50;
+
+	--pink-button-100: #f687b3;
+	--pink-button-200: #ed64a6;
 
 	--html-color: #e34c2620;
 	--css-color: #264de420;
