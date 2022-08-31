@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./hero.module.css";
 
-import hero from "../../../public/assets/profile.jpg";
+import hero from "../../../public/assets/profile/profile.webp";
 import { ButtonHero } from "../../components/button-hero/ButtonHero";
 import { LandscapeAnimation } from "../../animations/LandscapeAnimation";
 
