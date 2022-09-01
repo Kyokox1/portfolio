@@ -1,8 +1,8 @@
 .layout {
 	display: flex;
+	position: relative;
 	align-items: center;
 	justify-content: center;
-	position: relative;
 	min-height: 100vh;
 	background: var(--black-200);
 	color: #ffffff;
