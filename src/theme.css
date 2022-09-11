@@ -2,20 +2,6 @@ body {
 	font-family: "Raleway", sans-serif;
 }
 
-::-webkit-scrollbar {
-	width: 8px;
-	background: var(--black-100);
-}
-
-::-webkit-scrollbar-thumb {
-	background: var(--gray-letter-200);
-	border-radius: 999px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background: var(--gray-letter-100);
-}
-
 :root {
 	--pink-100: #e63e6d;
 	--pink-200: #b42b51;
@@ -45,4 +31,20 @@ body {
 	--git-color: #f1502f20;
 	--github-color: #33333320;
 	--kotlin-color: #b125ea20;
+}
+
+@media (min-width: 990px) {
+	::-webkit-scrollbar {
+		width: 8px;
+		background: var(--black-100);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: var(--gray-letter-200);
+		border-radius: 999px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--gray-letter-100);
+	}
 }
