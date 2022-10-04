@@ -32,7 +32,7 @@ export const Hero = () => {
 						<ButtonHero url="https://www.linkedin.com/in/kevin-bejarano-ruiz-a2a303239/">
 							Contáctame
 						</ButtonHero>
-						<ButtonHero url="https://drive.google.com/file/d/1WTqqSsqQpM4Ty2rC5WuGPPI7TQkSa1FR/view?usp=sharing">
+						<ButtonHero url="https://drive.google.com/file/d/14m5dfgbt0GhrxsrZF8O7RxwS2KOwaYtP/view?usp=sharing">
 							Descargar CV
 						</ButtonHero>
 					</div>
